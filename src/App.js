@@ -27,7 +27,7 @@ function App() {
           <motion.div 
           className="inner" 
           drag="x" 
-          dragConstraints={{ right:0, left: -width  }} //usar o width (cálculo)
+          dragConstraints={{ right:0, left: -1600}} //usar o width (cálculo)
           initial={{ x: 100 }}
           animate={{ x: 0 }}
           >
