@@ -21,25 +21,25 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      
-      <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
-        <motion.div 
-        className="inner" 
-        drag="x" 
-        dragConstraints={{ right:0, left: - width  }} //usar o width (cálculo)
-        initial={{ x: 100 }}
-        animate={{ x: 0 }}
-        >
+    <div className="App"> 
+        
+        <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
+          <motion.div 
+          className="inner" 
+          drag="x" 
+          dragConstraints={{ right:0, left: -width  }} //usar o width (cálculo)
+          initial={{ x: 100 }}
+          animate={{ x: 0 }}
+          >
 
-          {images.map(image => (
-            <motion.div key={image} className="item">
-              <img className="img" src={image} alt="texto alternatiovo"/>
-            </motion.div>
-          ))}
+            {images.map(image => (
+              <motion.div key={image} className="item">
+                <img className="img" src={image} alt="texto alternatiovo"/>
+              </motion.div>
+            ))}
 
+          </motion.div>
         </motion.div>
-      </motion.div>
 
     </div>
   );
