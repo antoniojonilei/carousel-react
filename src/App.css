@@ -1,0 +1,29 @@
+.App{
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #45484C;
+}
+
+.App .carousel {
+  height: 80%;
+  width: 900px;  
+}
+
+.App .carousel .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .carousel .inner .item .img{
+  width: 100%;
+  height: 300px;
+  padding: 12px;
+
+  border-radius: 20px;
+}
