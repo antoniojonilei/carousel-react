@@ -7,7 +7,7 @@ import image2 from './img/img22.jpg'
 import image3 from './img/img33.jpg'
 import image4 from './img/img44.jpg'
 
-const images = [image1, image2, image3, image4]
+const images = [image1, image2, image3, image4, image1, image2, image3, image4]
 
 function App() {
   const carousel = useRef()
@@ -27,7 +27,7 @@ function App() {
         <motion.div 
         className="inner" 
         drag="x" 
-        dragConstraints={{ right:0, left: - 420  }} //usar o width (cálculo)
+        dragConstraints={{ right:0, left: - 1260  }} //usar o width (cálculo)
         initial={{ x: 100 }}
         animate={{ x: 0 }}
         >
